@@ -1,9 +1,48 @@
 h1 {
-  color: rgb(255, 0, 255);
-  font-family: cursive;
-  text-align: center;
+	color: rgb(0);
+	font-family: sans-serif;
+	text-align: left;
+		
+  	display: inline-block;
+	padding-right: 10px;
 }
 body {
   background-color: rgb(222, 222, 222);
   font-family: sans-serif;
+}
+#doctor-photo {
+	float: left;
+	padding: 10px;
+
+}
+#bio-text {
+	color: rgb(0);
+	font-family: sans-serif;
+	padding: 10px;
+	width: 85%;
+}
+
+.button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.button {
+
+  width: 10%;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 25px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /*
+  font-size: 22px;
+  */
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#wide-button-MRA{
+	width:30%;
 }
