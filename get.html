@@ -82,7 +82,7 @@
 			    var li = document.createElement("LI");                					 // Create a <li> node
 			    var dataForLI = document.createTextNode(username + " " + scanToDo); 	// Create a text node
 			    li.appendChild(dataForLI);												// Append the text to <li>
-				document.getElementById("protocol-List").appendChild(dataForLI);    // Append <li> to <ul> with id="protocol-List"
+				document.getElementById("protocol-List").appendChild(li);    // Append <li> to <ul> with id="protocol-List"
 
 				var para = document.createElement("P");                       // Create a <p> node
 				document.getElementById("protocol-List").appendChild(para);    // Append <p> to <ul> with id="protocol-List"
