@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        
+
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+		
+	    <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
+	    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+
+		<!-- Load Bootstrap stylesheet, which will is CSS that makes everything prettier and also responsive (aka will work on all devices of all sizes). 
+	
+		<link rel="stylesheet" href="styles.css">
+	-->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+        <title>Form Practice</title>
+    
+
+
+
+
+
+    </head>
+
+      <body>
+      	<h1>Form Practice</h1>
+
+
+
+		<!-- <form action="/action_page.php"> -->
+
+		 <form id="protocolForm">
+
+		  User Name:<br>
+		  <input type="text" name="username"><br>
+		  Password:<br>
+		  <input type="password" name="pswd">
+
+			</p>
+
+		  <select name="scanToDo" size="4">
+		    <option value="chestWO">CT chest WO</option>
+		    <option value="chestW">CT chest WITH</option>
+		    <option value="chestWOW">CT chest W/WO</option>
+		    <option value="HRCT">HRCT</option>
+		  </select>
+		  <br><br>
+		  
+
+  			<input type="submit" value="Submit">
+		
+
+		</form>
+
+
+<!--
+		<script type="text/javascript">
+
+
+			/*
+			var js_username = document.getElementsByName("username")[0].value;
+
+			var js_scanToDo = document.getElementsByName("scanToDo")[0].value;
+			
+			console.log (js_username);
+
+			console.log(js_scanToDo);
+
+			*/
+
+
+			// TODO: Replace with your project's config object. You can find this
+			// by navigating to your project's console overview page
+			// (https://console.firebase.google.com/project/your-project-id/overview)
+			// and clicking "Add Firebase to your web app"
+-->
+
+			<script>
+			  // Initialize Firebase
+			  var config = {
+			    apiKey: "AIzaSyC0GTC9H2AQCt-EReTwTJtwnhJlsfZHVa4",
+			    authDomain: "testdannyhankins.firebaseapp.com",
+			    databaseURL: "https://testdannyhankins.firebaseio.com",
+			    projectId: "testdannyhankins",
+			    storageBucket: "testdannyhankins.appspot.com",
+			    messagingSenderId: "235442361676"
+			  };
+			  firebase.initializeApp(config);
+
+			  //test to see it is working
+			  console.log(firebase);
+
+
+			// Reference to the protocols object in your Firebase database
+			var protocols = firebase.database().ref("protocols");
+
+			// Save a new protocol to the database, using the input in the form
+			var submitProtocolQuestion = function () {
+
+			  // Get input values from each of the form elements
+			var js_username = document.getElementsByName("username")[0].value;
+
+			var js_scanToDo = document.getElementsByName("scanToDo")[0].value;
+
+			  // Push a new protocol to the database using those values
+			  protocols.push({
+			    "username": js_username,
+			    "scanToDo": js_scanToDo
+			  });
+			};
+
+			// When the window is fully loaded, call this function.
+			// Note: because we are attaching an event listener to a particular HTML element
+			// in this function, we can't do that until the HTML element in question has
+			// been loaded. Otherwise, we're attaching our listener to nothing, and no code
+			// will run when the submit button is clicked.
+			$(window).load(function () {
+
+			  // Find the HTML element with the id recommendationForm, and when the submit
+			  // event is triggered on that element, call submitProtocolQuestion.
+			  $("#protocolForm").submit(submitProtocolQuestion);
+
+			});
+			</script>
+
+
+
+
+		<!--   </script>   -->
+
+	</body>
