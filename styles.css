@@ -38,7 +38,9 @@ body {
 .button {
 
   width: 15%;
+  /*
   height: 60px;
+  */
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -53,6 +55,6 @@ body {
   cursor: pointer;
 }
 #wide-button-MRA{
-	width:30%;
+	width:70%;
 
 }
