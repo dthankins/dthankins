@@ -38,7 +38,7 @@ body {
 .button {
 
   width: 15%;
-  height: 50px;
+  height: 60px;
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -54,4 +54,5 @@ body {
 }
 #wide-button-MRA{
 	width:30%;
+
 }
