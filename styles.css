@@ -37,7 +37,7 @@ body {
 
 .button {
 
-  width: 110px; /* 15%; */
+  width: 15%; /* 110px; */
   /*
   height: 60px;
   */
@@ -55,6 +55,6 @@ body {
   cursor: pointer;
 }
 #wide-button-MRA{
-	width: 400px; /* 60%; */
+	width: 60%; /* 400px; */
 
 }
