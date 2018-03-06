@@ -81,7 +81,7 @@ body {
 
 
 
-#msk:hover .bioItem, #msk:focus .bioItem{ /*prev used hover but change for mobile*/
+.itemTitle:hover .bioItem, .itemTitle:focus .bioItem{ /*prev used hover but change for mobile*/
   
   
   display: block; 
@@ -108,15 +108,11 @@ li {
  
 }
 
-#msk:hover .spacingItems {
+.itemTitle:hover .spacingItems {
   /*
   margin-top: 10px;
   */
 }
 
-.fixed {
-  /*
-  object-position: absolute;
-  */
-}
+
 
