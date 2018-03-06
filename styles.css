@@ -19,14 +19,14 @@ body {
 	color: rgb(0);
 	font-family: sans-serif;
 	padding: 10px;
-	width: 95%;
+	width: 90%;
 
 }
 #bio-list {
 	color: rgb(0);
 	font-family: sans-serif;
 	
-	padding-left: 255px;
+	padding-left: 225px;
 	width: 75%;
 
 }
@@ -58,3 +58,64 @@ body {
 	width: 60%; /* 400px; */
 
 }
+
+
+.bioItem { 
+  
+  display: none;
+  
+
+  
+  /*
+  padding: 10px;
+  margin-left: 275px;
+  margin-top: -25px;
+  width: 55%;
+  display: block; 
+  margin-top: -35px;
+  background-color: blue;
+  color: white;
+  */
+}
+
+
+
+#msk:hover .bioItem {
+  
+  
+  display: block; 
+  /*
+  padding: 10px;
+  margin-left: 275px;
+  
+  width: 55%;
+
+  margin-top: -35px;
+  background-color: blue;
+  color: white;
+  */
+}
+
+li {
+  margin-left: 10px;
+}
+
+.spacingItems {
+  
+ 
+  margin-top: 35px;
+ 
+}
+
+#msk:hover .spacingItems {
+  /*
+  margin-top: 10px;
+  */
+}
+
+.fixed {
+  /*
+  object-position: absolute;
+  */
+}
+
