@@ -80,7 +80,7 @@ body {
 
 
 
-#msk:hover .bioItem {
+#msk:active .bioItem {
   
   
   display: block; 
