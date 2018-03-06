@@ -80,7 +80,8 @@ body {
 
 
 
-#msk:active .bioItem {
+
+#msk:hover .bioItem, #msk:focus .bioItem{ /*prev used hover but change for mobile*/
   
   
   display: block; 
