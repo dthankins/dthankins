@@ -62,7 +62,10 @@ body {
 
 .bioItem { 
   
+  /*
   display: none;
+  */
+  color: rgb(222, 222, 222);
   
 
   
@@ -83,8 +86,16 @@ body {
 
 .itemTitle:hover .bioItem, .itemTitle:focus .bioItem{ /*prev used hover but change for mobile*/
   
-  
+  /* this one worked but choppy
   display: block; 
+  */
+  /* did not work
+  color: rgb(0);
+   background-color: rgb(211,211,211);
+  */
+ 
+  color: black;
+
   /*
   padding: 10px;
   margin-left: 275px;
